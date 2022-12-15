@@ -9,6 +9,9 @@ export class PrismaNotificationsRepositories
   implements NotificationRepositories
 {
   constructor(private prismaService: PrismaService) {}
+  findManyByRecipientId(recipientId: string): Promise<Notification[]> {
+    throw new Error('Method not implemented.');
+  }
   countManyByRecipientId(recipientId: string): Promise<number> {
     throw new Error('Method not implemented.');
   }
