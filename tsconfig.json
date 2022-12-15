@@ -17,6 +17,12 @@
     "strictBindCallApply": false,
     "strictPropertyInitialization": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@app/*":["./src/app/*"],
+      "@util/*":["./src/util/*"],
+      "@infra/*":["./src/infra/*"],
+      "@test/*":["./test/*"],
+    }
   }
 }
