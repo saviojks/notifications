@@ -18,11 +18,12 @@
     "strictPropertyInitialization": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
+    "resolveJsonModule": true,
     "paths": {
       "@app/*":["./src/app/*"],
       "@util/*":["./src/util/*"],
       "@infra/*":["./src/infra/*"],
-      "@test/*":["./test/*"],
+      "@test/*":["./test/*"]
     }
   }
 }
