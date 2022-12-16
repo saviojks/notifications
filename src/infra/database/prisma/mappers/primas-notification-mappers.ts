@@ -4,8 +4,15 @@ import { Notifications as RowNotification } from '@prisma/client';
 
 export class PrismaNotificationsMappers {
   static toPrisma(notification: Notification) {
-    const { id, category, content, createdAt, recipientId, readAt } =
-      notification;
+    const {
+      id,
+      category,
+      content,
+      createdAt,
+      recipientId,
+      readAt,
+      canceledAt,
+    } = notification;
     return {
       id,
       category,
@@ -13,6 +20,7 @@ export class PrismaNotificationsMappers {
       createdAt,
       recipientId,
       readAt,
+      canceledAt,
     };
   }
   static toDomain(ram: RowNotification): Notification {
