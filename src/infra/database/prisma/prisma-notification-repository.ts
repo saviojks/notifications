@@ -30,7 +30,7 @@ export class PrismaNotificationsRepositories
   async countManyByRecipientId(recipientId: string): Promise<number> {
     const count = await this.prisma.notifications.count({
       where: {
-        id: recipientId,
+        recipientId: recipientId,
       },
     });
     return count;
