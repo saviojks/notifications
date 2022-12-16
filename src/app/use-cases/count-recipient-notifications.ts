@@ -9,7 +9,7 @@ interface ICountRecipientNotificationResponse {
   count: number;
 }
 @Injectable()
-export class CountRecipientNotification {
+export class CountRecipientNotifications {
   constructor(private notificationRepository: NotificationRepositories) {}
 
   async execute({
