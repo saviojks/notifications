@@ -44,7 +44,6 @@ export class PrismaNotificationsRepositories
   }
   async save(notification: Notification): Promise<void> {
     const raw = PrismaNotificationsMappers.toPrisma(notification);
-    console.log({ raw, notification });
 
     await this.prisma.notifications.update({
       where: {

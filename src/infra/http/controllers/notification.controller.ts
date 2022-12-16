@@ -21,8 +21,6 @@ export class NotificationController {
 
   @Patch('cancel/:notificationId')
   async cancel(@Param('notificationId') notificationId: string) {
-    console.log('notificationId =>> notificationId =>');
-
     await this.cancelNotification.execute({ notificationId });
   }
 
@@ -33,7 +31,6 @@ export class NotificationController {
     const count = await this.countRecipientNotifications.execute({
       recipientId,
     });
-    console.log({ count });
 
     return count;
   }
